@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+>
+
+    <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+   	android:orientation="horizontal"
+   	android:background="#33B5E5"
+    >
+
+           <LinearLayout
+               android:id="@+id/lay1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:layout_weight="50"
+               android:orientation="horizontal" >
+
+        <ImageButton 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/launcher"
+            android:id="@+id/logo"
+            android:layout_marginLeft="20dp"
+            android:contentDescription="@string/describe"
+            />
+
+    
+    <Spinner 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="12dp"
+        android:id="@+id/spinners"
+        android:prompt="@string/prompt"
+        android:entries="@array/spin"
+         android:layout_marginLeft="20dp"
+         android:background="#33B5E5"
+ 
+
+
+         
+         android:spinnerMode="dropdown"
+     />
+         
+              
+    </LinearLayout>
+    
+       <LinearLayout
+           android:id="@+id/lay2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="right"
+           android:layout_weight="5"
+           android:orientation="horizontal" 
+           
+            >
+
+    <ImageButton
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/search"
+        android:contentDescription="@string/describe2"
+   />
+    
+       <ImageButton
+           android:id="@+id/setting"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="@drawable/help"
+           android:contentDescription="@string/describe3"
+           android:layout_marginTop="10dp"
+           
+          />
+
+       </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>
